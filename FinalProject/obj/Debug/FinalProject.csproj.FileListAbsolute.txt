@@ -1,0 +1,16 @@
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\bin\Debug\FinalProject.exe
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.AssemblyReference.cache
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.SuggestedBindingRedirects.cache
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.cache
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.Form1.resources
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmCardreader.resources
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\bin\Debug\dje\FinalProject.resources.dll
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.SplashScreen.resources
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.SplashScreen.dje.resources
+D:\ResearchRepo\Project Final\FinalProject\FinalProject\obj\Debug\dje\FinalProject.resources.dll

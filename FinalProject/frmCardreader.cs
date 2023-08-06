@@ -16,6 +16,7 @@ namespace FinalProject
         public frmCardreader()
         {
             InitializeComponent();
+            dateTimePicker1.MaxDate = DateTime.Now.AddDays(-1);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,109 +35,12 @@ namespace FinalProject
             return count;
         }
 
-        /* private void button2_Click(object sender, EventArgs e)
-         {
-             string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high1\AECTS1";
-             int cr01Count = 0;
-
-             try
-             {
-                 // Get all .jrn files in the folder
-                 string[] jrnFiles = Directory.GetFiles(folderPath, "*.jrn");
-
-                 // Read and count the occurrences of "CR01" in each .jrn file
-                 foreach (string filePath in jrnFiles)
-                 {
-                     string fileContent = File.ReadAllText(filePath);
-                     cr01Count += CountWordOccurrences(fileContent, "CR01:");
-                 }
-
-                 // Set the count value to label2
-                 label2.Text = cr01Count.ToString();
-             }
-             catch (Exception ex)
-             {
-                 // Handle any exceptions that might occur during the process
-                 MessageBox.Show("Error reading files: " + ex.Message);
-             }
-         }*/
-
-        /*private void button2_Click(object sender, EventArgs e)
-        {
-            string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high1\AECTS1";
-            int cr01Count = 0;
-
-            DateTime startDate = dateTimePicker1.Value;
-            DateTime endDate = dateTimePicker2.Value.Date.AddDays(1).AddSeconds(-1); // End date should include the entire day.
-
-            try
-            {
-                // Get all .jrn files in the folder
-                string[] jrnFiles = Directory.GetFiles(folderPath, "*.jrn");
-
-                // Read and count the occurrences of "CR01" in each .jrn file within the date range
-                foreach (string filePath in jrnFiles)
-                {
-                    DateTime fileModifiedDate = File.GetLastWriteTime(filePath);
-
-                    if (fileModifiedDate >= startDate && fileModifiedDate <= endDate)
-                    {
-                        string fileContent = File.ReadAllText(filePath);
-                        cr01Count += CountWordOccurrences(fileContent, "CR01:");
-                    }
-                }
-
-                // Set the count value to label2
-                label2.Text = cr01Count.ToString();
-            }
-            catch (Exception ex)
-            {
-                // Handle any exceptions that might occur during the process
-                MessageBox.Show("Error reading files: " + ex.Message);
-            }
-        }*/
-
-
-        /*private void button2_Click(object sender, EventArgs e)
-        {
-            string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high1\AECTS1";
-            int cr01Count = 0;
-
-            DateTime startDate = dateTimePicker1.Value;
-            DateTime endDate = dateTimePicker2.Value.Date.AddDays(1).AddSeconds(-1); // End date should include the entire day.
-
-            try
-            {
-                // Get all .jrn files in the folder
-                string[] jrnFiles = Directory.GetFiles(folderPath, "*.jrn");
-
-                // Read and count the occurrences of "CR01" in each .jrn file within the date range
-                foreach (string filePath in jrnFiles)
-                {
-                    DateTime fileModifiedDate = File.GetLastWriteTime(filePath);
-
-                    if (fileModifiedDate >= startDate && fileModifiedDate <= endDate)
-                    {
-                        string fileContent = File.ReadAllText(filePath);
-                        cr01Count += CountWordOccurrences(fileContent, "CR01:");
-                    }
-                }
-
-                // Set the count value to label2
-                label2.Text = cr01Count.ToString();
-            }
-            catch (Exception ex)
-            {
-                // Handle any exceptions that might occur during the process
-                MessageBox.Show("Error reading files: " + ex.Message);
-            }
-        }*/
-
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high1\AECTS1";
+            string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high\AECTS1";
             int cr01Count = 0;
+            int cr02Count = 0;
 
             DateTime startDate = dateTimePicker1.Value;
             DateTime endDate = dateTimePicker2.Value.Date.AddDays(1); // End date should include the entire day.
@@ -155,11 +59,13 @@ namespace FinalProject
                     {
                         string fileContent = File.ReadAllText(filePath);
                         cr01Count += CountWordOccurrences(fileContent, "CR01:");
+                        cr02Count += CountWordOccurrences(fileContent, "Transaction");
                     }
                 }
 
                 // Set the count value to label2
                 label2.Text = cr01Count.ToString();
+                label5.Text = cr02Count.ToString();
             }
             catch (Exception ex)
             {
@@ -172,17 +78,16 @@ namespace FinalProject
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
             dateTimePicker2.MaxDate = DateTime.Now;
+
+            dateTimePicker1.Value = dateTimePicker2.Value.AddDays(-1);
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            dateTimePicker1.MaxDate = DateTime.Now;
+            
         }
 
-        /*private void button1_Click(object sender, EventArgs e)
-        {
 
-        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {

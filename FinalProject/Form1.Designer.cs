@@ -179,7 +179,7 @@
             this.pnlcardreader.Location = new System.Drawing.Point(305, 0);
             this.pnlcardreader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlcardreader.Name = "pnlcardreader";
-            this.pnlcardreader.Size = new System.Drawing.Size(713, 617);
+            this.pnlcardreader.Size = new System.Drawing.Size(704, 617);
             this.pnlcardreader.TabIndex = 1;
             // 
             // Form1

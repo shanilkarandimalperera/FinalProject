@@ -54,12 +54,11 @@
             this.pnldash.Controls.Add(this.pictureBox1);
             this.pnldash.Font = new System.Drawing.Font("Dubai", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnldash.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pnldash.Location = new System.Drawing.Point(-1, 0);
+            this.pnldash.Location = new System.Drawing.Point(-1, -3);
             this.pnldash.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnldash.MaximumSize = new System.Drawing.Size(299, 625);
             this.pnldash.MinimumSize = new System.Drawing.Size(45, 625);
             this.pnldash.Name = "pnldash";
-            this.pnldash.Size = new System.Drawing.Size(299, 625);
+            this.pnldash.Size = new System.Drawing.Size(300, 683);
             this.pnldash.TabIndex = 0;
             // 
             // pnlNav
@@ -81,7 +80,7 @@
             this.btnhome.FlatAppearance.BorderSize = 0;
             this.btnhome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhome.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnhome.Location = new System.Drawing.Point(0, 581);
+            this.btnhome.Location = new System.Drawing.Point(0, 639);
             this.btnhome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnhome.Name = "btnhome";
             this.btnhome.Size = new System.Drawing.Size(299, 42);
@@ -176,17 +175,17 @@
             // 
             // pnlcardreader
             // 
-            this.pnlcardreader.Location = new System.Drawing.Point(305, 0);
+            this.pnlcardreader.Location = new System.Drawing.Point(306, 0);
             this.pnlcardreader.Margin = new System.Windows.Forms.Padding(4);
             this.pnlcardreader.Name = "pnlcardreader";
-            this.pnlcardreader.Size = new System.Drawing.Size(704, 617);
+            this.pnlcardreader.Size = new System.Drawing.Size(833, 680);
             this.pnlcardreader.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 620);
+            this.ClientSize = new System.Drawing.Size(1138, 677);
             this.Controls.Add(this.pnlcardreader);
             this.Controls.Add(this.pnldash);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

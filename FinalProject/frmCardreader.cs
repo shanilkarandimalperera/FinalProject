@@ -52,6 +52,8 @@ namespace FinalProject
             int cr12Count = 0;
             int cr13Count = 0;
             int cr14Count = 0;
+            int cr15Count = 0;
+            int cr16Count = 0;
 
             DateTime startDate = dateTimePicker1.Value;
             DateTime endDate = dateTimePicker2.Value.Date.AddDays(1); // End date should include the entire day.
@@ -73,6 +75,8 @@ namespace FinalProject
                         // Device Front Failures 
                         cr01Count += CountWordOccurrences(fileContent, "CR01:3F:48:60");
                         cr02Count += CountWordOccurrences(fileContent, "CR01:3E:60:48");
+                        cr16Count += CountWordOccurrences(fileContent, "CR01:3F:60:48");
+                    
 
                         // Card Jams
                         cr04Count += CountWordOccurrences(fileContent, "CR01:3F:40:60");
@@ -87,6 +91,7 @@ namespace FinalProject
 
                         //customer card forgeten
                         cr11Count += CountWordOccurrences(fileContent, "CR01:23:00:00");
+                        cr15Count += CountWordOccurrences(fileContent, "CR01:3F:40:41");
 
                         //self test failures
                         cr12Count += CountWordOccurrences(fileContent, "CR01:3F:00");
@@ -101,30 +106,78 @@ namespace FinalProject
                 }
 
                 // Set the count value to label2
-                teases.Text = (cr01Count+ cr02Count).ToString();
+                int teasescal = cr01Count + cr02Count + cr16Count;
+                teases.Text = (cr01Count+ cr02Count + cr16Count).ToString();
 
                 communication.Text = cr10Count.ToString();
 
+                int jamcal = cr04Count + cr05Count + cr06Count + cr07Count + cr08Count + cr09Count;
                 jam.Text= (cr04Count + cr05Count + cr06Count + cr07Count + cr08Count + cr09Count).ToString();
 
                 lblfail.Text=cr12Count.ToString();
 
-                lblforgrt.Text= cr11Count.ToString();
+                int forgetcal = cr11Count + cr15Count;
+                lblforgrt.Text= (cr11Count + cr15Count).ToString();
 
-                int cal = cr01Count + cr02Count + cr04Count + cr05Count + cr06Count + cr07Count + cr08Count + cr09Count + cr10Count + cr11Count + cr12Count + cr14Count;
+                int cal = cr01Count + cr02Count + cr04Count + cr05Count + cr06Count + cr07Count + cr08Count + cr09Count + cr10Count + cr11Count + cr12Count + cr14Count + cr15Count + cr16Count;
                 lblother.Text = (cr13Count - cal).ToString();
+                int othercal = cr13Count - cal;
 
                 lbltotalfail.Text= (cr13Count - cr14Count).ToString();
+
+                /// Error Condition Checking
+                /// 
+                if ((teasescal > 15 & jamcal > 4 & cr10Count > 4 & cr12Count > 4 & othercal > 20) || (teasescal > 15 & jamcal > 4 & cr10Count > 4 & cr12Count > 4) || (teasescal > 15 & jamcal > 4 & cr10Count > 4 & othercal > 20) || cr10Count > 4 & cr12Count > 4 & othercal > 20 || 
+                    (teasescal > 15 & jamcal > 4 & othercal > 20) || teasescal > 15 & jamcal > 4 & cr12Count > 4)
+                {
+                    lblstatus.Text = "High Number Of Errors" + Environment.NewLine + "Service Required";
+                    lblstatus.ForeColor = Color.Red;
+                }
+                else if (teasescal > 15 & jamcal > 4)
+                {
+                    lblstatus.Text = "High Number Of Shutter Errors & Card Jams" + Environment.NewLine + "Service Require";
+                    lblstatus.ForeColor = Color.Red;
+                }
+
+               /* else if (teasescal > 15)
+                {
+                    lblstatus.Text = "High Number Of Shutter / Rollers" + Environment.NewLine + "Service Require";
+                    lblstatus.ForeColor = Color.Red;
+                }
+                else if (jamcal > 4)
+                {
+                    lblstatus.Text = "High Number Of Card Jams" + Environment.NewLine + "Service Require";
+                    lblstatus.ForeColor = Color.Red;
+                }*/
+                else if (teasescal <= 15 & jamcal <= 4 & cr10Count <= 4 & cr12Count <= 4 & othercal <= 20)
+                {
+                    lblstatus.Text = "Devie Normal Operation";
+                    lblstatus.ForeColor = Color.Green;
+                }
+                else
+                {
+                    lblstatus.Text = "High Number Of Errors" + Environment.NewLine +"Service Required";
+                    lblstatus.ForeColor = Color.Red;
+                }
+
+
+
+
 
                 if (cr13Count > 15)
                 {
                     label2.ForeColor = Color.Red;
                     lbltotalfail.ForeColor = Color.Red;
+                    //txtstatus.Text = "High Number Of Shutter / Rollers Errors Service Required";
+                   /* lblstatus.Text = "High Number Of Shutter / Rollers Errors" + Environment.NewLine + "Service Required";
+                    lblstatus.ForeColor = Color.Red;*/
                 }
                 else
                 {
                     label2.ForeColor = SystemColors.ControlText;
                     lbltotalfail.ForeColor = SystemColors.ControlText;
+                    /*lblstatus.Text = "Device Normal Operation";
+                    lblstatus.ForeColor = Color.Green;*/
                 }
                 if ((cr01Count + cr02Count) > 15)
                 {
@@ -169,18 +222,17 @@ namespace FinalProject
                 }
                 else {
                     lblother.ForeColor = SystemColors.ControlText;
-
                 }
 
-                /*else
-                {
-                    // Set the default text color (e.g., black) here
-                     // You can replace this with any desired color.
-                    
-                    
-                    
-                    
-                }*/
+
+                chart1.Series["ShutterFail"].Points.AddXY("", teasescal);
+                chart1.Series["CardJam"].Points.AddXY("", jamcal);
+                chart1.Series["ComFail"].Points.AddXY("", cr10Count);
+                chart1.Series["CusForget"].Points.AddXY("", forgetcal);
+                chart1.Series["STFail"].Points.AddXY("", cr12Count);
+                chart1.Series["Other"].Points.AddXY("", othercal);
+                
+
             }
             catch (Exception ex)
             {
@@ -312,6 +364,11 @@ namespace FinalProject
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
         {
 
         }

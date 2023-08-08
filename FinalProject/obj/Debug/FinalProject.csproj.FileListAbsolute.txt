@@ -30,3 +30,13 @@ D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CoreCom
 D:\Project Final\FinalProject\FinalProject\obj\Debug\dje\FinalProject.resources.dll
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.exe
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.dll
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.WinForms.dll
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.Wpf.dll
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.pdb
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.xml
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.WinForms.pdb
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.WinForms.xml
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.Wpf.pdb
+D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.Wpf.xml
+D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete

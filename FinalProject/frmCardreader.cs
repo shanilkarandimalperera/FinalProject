@@ -120,8 +120,8 @@ namespace FinalProject
                 lblforgrt.Text= (cr11Count + cr15Count).ToString();
 
                 int cal = cr01Count + cr02Count + cr04Count + cr05Count + cr06Count + cr07Count + cr08Count + cr09Count + cr10Count + cr11Count + cr12Count + cr14Count + cr15Count + cr16Count;
-                lblother.Text = (cr13Count - cal).ToString();
-                int othercal = cr13Count - cal;
+                lblother.Text = (cr13Count - cal - cr14Count).ToString();
+                int othercal = cr13Count - cal - cr14Count;
 
                 lbltotalfail.Text= (cr13Count - cr14Count).ToString();
 
@@ -130,12 +130,12 @@ namespace FinalProject
                 if ((teasescal > 15 & jamcal > 4 & cr10Count > 4 & cr12Count > 4 & othercal > 20) || (teasescal > 15 & jamcal > 4 & cr10Count > 4 & cr12Count > 4) || (teasescal > 15 & jamcal > 4 & cr10Count > 4 & othercal > 20) || cr10Count > 4 & cr12Count > 4 & othercal > 20 || 
                     (teasescal > 15 & jamcal > 4 & othercal > 20) || teasescal > 15 & jamcal > 4 & cr12Count > 4)
                 {
-                    lblstatus.Text = "High Number Of Errors" + Environment.NewLine + "Service Required";
+                    lblstatus.Text = "High Number Of Errors Service Required";
                     lblstatus.ForeColor = Color.Red;
                 }
                 else if (teasescal > 15 & jamcal > 4)
                 {
-                    lblstatus.Text = "High Number Of Shutter Errors & Card Jams" + Environment.NewLine + "Service Require";
+                    lblstatus.Text = "High Number Of Shutter Errors & Card Jams Service Require";
                     lblstatus.ForeColor = Color.Red;
                 }
 
@@ -156,7 +156,7 @@ namespace FinalProject
                 }
                 else
                 {
-                    lblstatus.Text = "High Number Of Errors" + Environment.NewLine +"Service Required";
+                    lblstatus.Text = "High Number Of Errors Service Required";
                     lblstatus.ForeColor = Color.Red;
                 }
 
@@ -164,20 +164,15 @@ namespace FinalProject
 
 
 
-                if (cr13Count > 15)
+                if ((cr13Count - cr14Count) > 15)
                 {
                     label2.ForeColor = Color.Red;
                     lbltotalfail.ForeColor = Color.Red;
-                    //txtstatus.Text = "High Number Of Shutter / Rollers Errors Service Required";
-                   /* lblstatus.Text = "High Number Of Shutter / Rollers Errors" + Environment.NewLine + "Service Required";
-                    lblstatus.ForeColor = Color.Red;*/
                 }
                 else
                 {
                     label2.ForeColor = SystemColors.ControlText;
                     lbltotalfail.ForeColor = SystemColors.ControlText;
-                    /*lblstatus.Text = "Device Normal Operation";
-                    lblstatus.ForeColor = Color.Green;*/
                 }
                 if ((cr01Count + cr02Count) > 15)
                 {

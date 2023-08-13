@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="5ff6aad922ef7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5ff6aad922ef7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cardreader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cardreader.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="20200708112647_48788" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20200708112647_48788.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3364752-200 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3364752-200 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cardreader1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cardreader1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1r" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1r.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DN Series 400" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DN Series 400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3364752-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3364752-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="20230313144635_12543" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\20230313144635_12543.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

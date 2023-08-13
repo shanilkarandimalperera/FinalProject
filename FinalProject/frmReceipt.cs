@@ -152,30 +152,20 @@ namespace FinalProject
                 lbltotalfail.Text = (cr13Count - cr14Count).ToString();
 
                 // Error Condition Checking
-               /* /// 
-                if ((teasescal > 15 & jamcal > 4 & cr10Count > 4 & cr12Count > 4 & othercal > 20) || (teasescal > 15 & jamcal > 4 & cr10Count > 4 & cr12Count > 4) || (teasescal > 15 & jamcal > 4 & cr10Count > 4 & othercal > 20) || cr10Count > 4 & cr12Count > 4 & othercal > 20 ||
-                    (teasescal > 15 & jamcal > 4 & othercal > 20) || teasescal > 15 & jamcal > 4 & cr12Count > 4)
+                if ((headder > 15 & jamcal > 4 & com > 4 & cuttercal > 15 & othercal > 20) || 
+                    (headder > 15 & jamcal > 4 & com > 4 & cuttercal > 15) || 
+                    (headder > 15 & jamcal > 4 & com > 4 & othercal > 20) || com > 4 & cuttercal > 15 & othercal > 20 ||
+                    (headder > 15 & jamcal > 4 & othercal > 20) || headder > 15 & jamcal > 4 & cuttercal > 15)
                 {
                     lblstatus.Text = "High Number Of Errors Service Required";
                     lblstatus.ForeColor = Color.Red;
                 }
-                else if (teasescal > 15 & jamcal > 4)
+                else if (headder > 15 & jamcal > 4)
                 {
-                    lblstatus.Text = "High Number Of Shutter Errors & Card Jams Service Require";
+                    lblstatus.Text = "High Number Of Headder & Receipt Jams Service Require";
                     lblstatus.ForeColor = Color.Red;
                 }
-
-                *//* else if (teasescal > 15)
-                 {
-                     lblstatus.Text = "High Number Of Shutter / Rollers" + Environment.NewLine + "Service Require";
-                     lblstatus.ForeColor = Color.Red;
-                 }
-                 else if (jamcal > 4)
-                 {
-                     lblstatus.Text = "High Number Of Card Jams" + Environment.NewLine + "Service Require";
-                     lblstatus.ForeColor = Color.Red;
-                 }*//*
-                else if (teasescal <= 15 & jamcal <= 4 & cr10Count <= 4 & cr12Count <= 4 & othercal <= 20)
+                else if (headder <= 15 & jamcal <= 4 & com <= 4 & cuttercal <= 15 & othercal <= 20)
                 {
                     lblstatus.Text = "Devie Normal Operation";
                     lblstatus.ForeColor = Color.Green;
@@ -184,13 +174,18 @@ namespace FinalProject
                 {
                     lblstatus.Text = "High Number Of Errors Service Required";
                     lblstatus.ForeColor = Color.Red;
+                }
+
+
+
+
+
+                /*if ((cr13Count - cr14Count) > 15)
+                {
+                    label2.ForeColor = Color.Red;
+                    lbltotalfail.ForeColor = Color.Red;
                 }*/
-
-
-
-
-
-                if ((cr13Count - cr14Count) > 15)
+                if (headder > 15 || jamcal > 4 || cuttercal > 4 || com > 4 || othercal > 20)
                 {
                     label2.ForeColor = Color.Red;
                     lbltotalfail.ForeColor = Color.Red;
@@ -249,12 +244,12 @@ namespace FinalProject
                 }
 
 
-              /*  chart1.Series["ShutterFail"].Points.AddXY("", teasescal);
-                chart1.Series["CardJam"].Points.AddXY("", jamcal);
-                chart1.Series["ComFail"].Points.AddXY("", cr10Count);
-                chart1.Series["CusForget"].Points.AddXY("", forgetcal);
-                chart1.Series["STFail"].Points.AddXY("", cr12Count);
-                chart1.Series["Other"].Points.AddXY("", othercal);*/
+                chart1.Series["HeadderFail"].Points.AddXY("", headder);
+                chart1.Series["ReceiptJam"].Points.AddXY("", jamcal);
+                chart1.Series["ComFail"].Points.AddXY("", com);
+                chart1.Series["supplyLow"].Points.AddXY("", supplycal);
+                chart1.Series["CutterError"].Points.AddXY("", cuttercal);
+                chart1.Series["Other"].Points.AddXY("", othercal);
 
 
             }
@@ -278,6 +273,11 @@ namespace FinalProject
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmReceipt_Load(object sender, EventArgs e)
         {
 
         }

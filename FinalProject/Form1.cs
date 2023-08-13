@@ -98,6 +98,12 @@ namespace FinalProject
             pnlNav.Top = btnepp.Top;
             pnlNav.Left = btnepp.Left;
             btnepp.BackColor = Color.FromArgb(46, 51, 73);
+
+            this.pnlcardreader.Controls.Clear();
+            frmEPP Frmcardreader = new frmEPP() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Frmcardreader.FormBorderStyle = FormBorderStyle.None;
+            this.pnlcardreader.Controls.Add(Frmcardreader);
+            Frmcardreader.Show();
         }
 
         private void btndispenser_Click(object sender, EventArgs e)
@@ -106,6 +112,12 @@ namespace FinalProject
             pnlNav.Top = btndispenser.Top;
             pnlNav.Left = btndispenser.Left;
             btndispenser.BackColor = Color.FromArgb(46, 51, 73);
+
+            this.pnlcardreader.Controls.Clear();
+            frmDispenser Frmcardreader = new frmDispenser() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Frmcardreader.FormBorderStyle = FormBorderStyle.None;
+            this.pnlcardreader.Controls.Add(Frmcardreader);
+            Frmcardreader.Show();
         }
 
         private void btnreceipt_Leave(object sender, EventArgs e)

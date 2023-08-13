@@ -164,7 +164,12 @@ namespace FinalProject
 
 
 
-                if ((cr13Count - cr14Count) > 15)
+                /*if ((cr13Count - cr14Count) > 15)
+                {
+                    label2.ForeColor = Color.Red;
+                    lbltotalfail.ForeColor = Color.Red;
+                }*/
+                if ((cr01Count + cr02Count) > 15 || (cr04Count + cr05Count + cr06Count + cr07Count + cr08Count + cr09Count) > 4 || cr12Count > 4 || cr10Count > 4 || (cr13Count - cal) > 20)
                 {
                     label2.ForeColor = Color.Red;
                     lbltotalfail.ForeColor = Color.Red;

@@ -41,3 +41,5 @@ D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.Wpf.pdb
 D:\Project Final\FinalProject\FinalProject\bin\Debug\LiveCharts.Wpf.xml
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmReceipt.resources
+D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmEPP.resources
+D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmDispenser.resources

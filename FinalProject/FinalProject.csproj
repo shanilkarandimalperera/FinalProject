@@ -85,6 +85,12 @@
     <Compile Include="frmEPP.Designer.cs">
       <DependentUpon>frmEPP.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmReceipt.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEPP.resx">
       <DependentUpon>frmEPP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReceipt.resx">
       <DependentUpon>frmReceipt.cs</DependentUpon>
@@ -186,6 +195,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\20230313144635_12543.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DN Series 200.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

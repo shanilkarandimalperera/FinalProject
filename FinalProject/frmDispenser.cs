@@ -430,6 +430,14 @@ namespace FinalProject
                 {
                     lbltimeout.ForeColor = SystemColors.ControlText;
                 }
+                if (feedfail > 5)
+                {
+                    lblfeed.ForeColor = Color.Red;
+                }
+                else
+                {
+                    lblfeed.ForeColor = SystemColors.ControlText;
+                }
                 if (othererrcal > 20)
                 {
                     lblother.ForeColor = Color.Red;
@@ -440,12 +448,15 @@ namespace FinalProject
                 }
 
 
-               /* chart1.Series["HeadderFail"].Points.AddXY("", headder);
-                chart1.Series["ReceiptJam"].Points.AddXY("", jamcal);
-                chart1.Series["ComFail"].Points.AddXY("", com);
-                chart1.Series["supplyLow"].Points.AddXY("", supplycal);
-                chart1.Series["CutterError"].Points.AddXY("", cuttercal);
-                chart1.Series["Other"].Points.AddXY("", othercal);*/
+                chart1.Series["CashJam"].Points.AddXY("", chjamcal);
+                chart1.Series["Network Failures"].Points.AddXY("", networkerr);
+                chart1.Series["ComFail"].Points.AddXY("", comcal);
+                chart1.Series["Sensor Block"].Points.AddXY("", sensorer);
+                chart1.Series["Command Reject"].Points.AddXY("", cmdreject);
+                chart1.Series["Divert / Retracks"].Points.AddXY("", divert);
+                chart1.Series["Dispense Timeout"].Points.AddXY("", distimeout);
+                chart1.Series["Feed Failure"].Points.AddXY("", feedfail);
+                chart1.Series["Other"].Points.AddXY("", othererrcal);
 
 
             }

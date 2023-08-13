@@ -20,6 +20,12 @@ namespace FinalProject
             pnlNav.Left = btnhome.Left;
             btnhome.BackColor = Color.FromArgb(46, 51, 73);
 
+
+            this.pnlcardreader.Controls.Clear();
+            frmHome Frmcardreader = new frmHome() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Frmcardreader.FormBorderStyle = FormBorderStyle.None;
+            this.pnlcardreader.Controls.Add(Frmcardreader);
+            Frmcardreader.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -70,6 +76,12 @@ namespace FinalProject
             pnlNav.Top = btnhome.Top;
             pnlNav.Left = btnhome.Left;
             btnhome.BackColor = Color.FromArgb(46, 51, 73);
+
+            this.pnlcardreader.Controls.Clear();
+            frmHome Frmcardreader = new frmHome() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            Frmcardreader.FormBorderStyle = FormBorderStyle.None;
+            this.pnlcardreader.Controls.Add(Frmcardreader);
+            Frmcardreader.Show();
         }
 
         private void btnhome_Leave(object sender, EventArgs e)

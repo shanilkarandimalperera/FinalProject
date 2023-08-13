@@ -43,3 +43,4 @@ D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.CopyCom
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmReceipt.resources
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmEPP.resources
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmDispenser.resources
+D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmHome.resources

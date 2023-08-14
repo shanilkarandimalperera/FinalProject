@@ -474,5 +474,10 @@ namespace FinalProject
 
             dateTimePicker1.Value = dateTimePicker2.Value.AddDays(-1);
         }
+
+        private void communication_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -161,9 +161,9 @@
             this.lblother.Location = new System.Drawing.Point(760, 359);
             this.lblother.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblother.Name = "lblother";
-            this.lblother.Size = new System.Drawing.Size(36, 17);
+            this.lblother.Size = new System.Drawing.Size(17, 17);
             this.lblother.TabIndex = 33;
-            this.lblother.Text = "Null";
+            this.lblother.Text = "0";
             // 
             // lblsupply
             // 
@@ -172,9 +172,9 @@
             this.lblsupply.Location = new System.Drawing.Point(475, 360);
             this.lblsupply.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsupply.Name = "lblsupply";
-            this.lblsupply.Size = new System.Drawing.Size(36, 17);
+            this.lblsupply.Size = new System.Drawing.Size(17, 17);
             this.lblsupply.TabIndex = 32;
-            this.lblsupply.Text = "Null";
+            this.lblsupply.Text = "0";
             // 
             // lblcutter
             // 
@@ -183,9 +183,9 @@
             this.lblcutter.Location = new System.Drawing.Point(231, 360);
             this.lblcutter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblcutter.Name = "lblcutter";
-            this.lblcutter.Size = new System.Drawing.Size(34, 17);
+            this.lblcutter.Size = new System.Drawing.Size(17, 17);
             this.lblcutter.TabIndex = 34;
-            this.lblcutter.Text = "null";
+            this.lblcutter.Text = "0";
             // 
             // communication
             // 
@@ -194,9 +194,9 @@
             this.communication.Location = new System.Drawing.Point(760, 328);
             this.communication.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.communication.Name = "communication";
-            this.communication.Size = new System.Drawing.Size(36, 17);
+            this.communication.Size = new System.Drawing.Size(17, 17);
             this.communication.TabIndex = 31;
-            this.communication.Text = "Null";
+            this.communication.Text = "0";
             // 
             // jam
             // 
@@ -205,9 +205,9 @@
             this.jam.Location = new System.Drawing.Point(475, 328);
             this.jam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.jam.Name = "jam";
-            this.jam.Size = new System.Drawing.Size(34, 17);
+            this.jam.Size = new System.Drawing.Size(17, 17);
             this.jam.TabIndex = 30;
-            this.jam.Text = "null";
+            this.jam.Text = "0";
             // 
             // label7
             // 
@@ -283,9 +283,9 @@
             this.lblheadder.Location = new System.Drawing.Point(232, 328);
             this.lblheadder.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblheadder.Name = "lblheadder";
-            this.lblheadder.Size = new System.Drawing.Size(34, 17);
+            this.lblheadder.Size = new System.Drawing.Size(17, 17);
             this.lblheadder.TabIndex = 23;
-            this.lblheadder.Text = "null";
+            this.lblheadder.Text = "0";
             // 
             // button2
             // 
@@ -308,9 +308,9 @@
             this.lbltotalfail.Location = new System.Drawing.Point(468, 227);
             this.lbltotalfail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbltotalfail.Name = "lbltotalfail";
-            this.lbltotalfail.Size = new System.Drawing.Size(18, 26);
+            this.lbltotalfail.Size = new System.Drawing.Size(30, 26);
             this.lbltotalfail.TabIndex = 20;
-            this.lbltotalfail.Text = " ";
+            this.lbltotalfail.Text = " 0";
             // 
             // label2
             // 

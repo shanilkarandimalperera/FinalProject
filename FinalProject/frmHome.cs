@@ -17,7 +17,8 @@ namespace FinalProject
         {
             InitializeComponent();
 
-            string filePath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high\AECTS1\current.jrn";
+           // string filePath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high\AECTS1\current.jrn";
+            string filePath = @"C:\FTPHOME\FTPOUT\current.jrn";
 
             try
             {

@@ -33,7 +33,8 @@ namespace FinalProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high\AECTS1";
+           // string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high\AECTS1";
+            string folderPath = @"C:\FTPHOME\FTPOUT";
             int cr01Count = 0;
             int cr02Count = 0;
             int cr04Count = 0;

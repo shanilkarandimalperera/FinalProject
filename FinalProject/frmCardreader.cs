@@ -38,7 +38,8 @@ namespace FinalProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high\AECTS1";
+            //string folderPath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high\AECTS1"; 
+                string folderPath = @"C:\FTPHOME\FTPOUT";
             int cr01Count = 0;
             int cr02Count = 0;
             int cr04Count = 0;
@@ -311,7 +312,7 @@ namespace FinalProject
 
 
 
-        private void button1_Click(object sender, EventArgs e)
+        /*private void button1_Click(object sender, EventArgs e)
         {
             string filePath = @"D:\Reserarch\Logs\AECTS1torintoncardcapture high1\AECTS1\current.jrn";
 
@@ -338,7 +339,7 @@ namespace FinalProject
             }
 
             lblother.Text = "Date picker time" + dateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm:ss");
-        }
+        }*/
 
         private void button3_Click(object sender, EventArgs e)
         {

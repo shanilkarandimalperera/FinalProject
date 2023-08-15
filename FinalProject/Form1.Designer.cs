@@ -119,7 +119,7 @@
             this.btnepp.Name = "btnepp";
             this.btnepp.Size = new System.Drawing.Size(300, 42);
             this.btnepp.TabIndex = 2;
-            this.btnepp.Text = "Ecrypted Pin Pad";
+            this.btnepp.Text = "Ecrypted PIN Pad";
             this.btnepp.UseVisualStyleBackColor = false;
             this.btnepp.Click += new System.EventHandler(this.btnepp_Click);
             this.btnepp.Leave += new System.EventHandler(this.btnepp_leave);

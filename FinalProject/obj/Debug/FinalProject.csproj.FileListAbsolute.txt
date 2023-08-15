@@ -44,3 +44,7 @@ D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmReceipt.res
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmEPP.resources
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmDispenser.resources
 D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.frmHome.resources
+D:\Project Final\FinalProject\FinalProject\bin\Debug\FinalProject.exe.manifest
+D:\Project Final\FinalProject\FinalProject\bin\Debug\FinalProject.application
+D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.exe.manifest
+D:\Project Final\FinalProject\FinalProject\obj\Debug\FinalProject.application

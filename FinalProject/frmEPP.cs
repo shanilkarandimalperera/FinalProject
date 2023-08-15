@@ -239,9 +239,23 @@ namespace FinalProject
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
-            dateTimePicker2.MaxDate = DateTime.Now;
+            try
+            {
+                dateTimePicker2.MaxDate = DateTime.Now;
 
-            dateTimePicker1.Value = dateTimePicker2.Value.AddDays(-1);
+                dateTimePicker1.Value = dateTimePicker2.Value.AddDays(-1);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                // Handle the exception here
+                // You can display an error message, log the error, or perform any other necessary actions
+                MessageBox.Show("Please Select The Correct Dates");
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions that might occur during the process
+                MessageBox.Show("Error Please Select Correct Dates " + ex.Message);
+            }
         }
     }
 }

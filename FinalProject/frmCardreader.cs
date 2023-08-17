@@ -134,22 +134,31 @@ namespace FinalProject
                     lblstatus.Text = "High Number Of Errors Service Required";
                     lblstatus.ForeColor = Color.Red;
                 }
-                else if (teasescal > 15 & jamcal > 4)
+                else if (teasescal > 15 & jamcal > 4 & othercal > 20)
                 {
-                    lblstatus.Text = "High Number Of Shutter Errors & Card Jams Service Require";
+                    lblstatus.Text = "High Number Of Errors Service Required";
                     lblstatus.ForeColor = Color.Red;
                 }
-
-               /* else if (teasescal > 15)
+                else if (teasescal > 15 & othercal > 20)
                 {
-                    lblstatus.Text = "High Number Of Shutter / Rollers" + Environment.NewLine + "Service Require";
+                    lblstatus.Text = "High Number Of Errors Service Required";
+                    lblstatus.ForeColor = Color.Red;
+                }
+                else if (teasescal > 15 & jamcal > 4)
+                {
+                    lblstatus.Text = "High Number Of Shutter Errors & Card Jams Service Required";
+                    lblstatus.ForeColor = Color.Red;
+                }
+                else if (teasescal > 15)
+                {
+                    lblstatus.Text = "High Number Of Shutter / Rollers Failure Service Required";
                     lblstatus.ForeColor = Color.Red;
                 }
                 else if (jamcal > 4)
                 {
-                    lblstatus.Text = "High Number Of Card Jams" + Environment.NewLine + "Service Require";
+                    lblstatus.Text = "High Number Of Card Jams Failure" + Environment.NewLine + "Service Required";
                     lblstatus.ForeColor = Color.Red;
-                }*/
+                }
                 else if (teasescal <= 15 & jamcal <= 4 & cr10Count <= 4 & cr12Count <= 4 & othercal <= 20)
                 {
                     lblstatus.Text = "Devie Normal Operation";
@@ -170,7 +179,7 @@ namespace FinalProject
                     label2.ForeColor = Color.Red;
                     lbltotalfail.ForeColor = Color.Red;
                 }*/
-                if ((cr01Count + cr02Count) > 15 || (cr04Count + cr05Count + cr06Count + cr07Count + cr08Count + cr09Count) > 4 || cr12Count > 4 || cr10Count > 4 || (cr13Count - cal) > 20)
+                if ((cr01Count + cr02Count + cr16Count) > 15 || (cr04Count + cr05Count + cr06Count + cr07Count + cr08Count + cr09Count) > 4 || cr12Count > 4 || cr10Count > 4 || (cr13Count - cal) > 20)
                 {
                     label2.ForeColor = Color.Red;
                     lbltotalfail.ForeColor = Color.Red;
